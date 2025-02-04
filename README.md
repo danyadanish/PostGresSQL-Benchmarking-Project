@@ -11,7 +11,7 @@ This project explores:
 - Justifying index choices based on PostgreSQL-specific reasoning and knowledge of Relational Database Management Systems (RDBMS).
 
 The project was conducted in two phases:
-1. **Basic Indexing**: Creating indices to optimize query performance.
+1. **Basic Indexing**: Creating indices to optimize query performance with High Load (1000 - 10000 Runs).
 2. **Advanced Optimization**: Modifying the physical plan to force PostgreSQL to use specific indices and analyzing the impact on performance.
 
 ## Tools and Technologies
@@ -22,23 +22,22 @@ The project was conducted in two phases:
 ## Repository Structure
 project/
 
-├── data/                   # Sample datasets used for benchmarking (if applicable).
+├── loaddb.sql                  # SQL to Load our Sample Data
 
 ├── queries/                # SQL files for the queries analyzed.
+│   ├── Basic Indexing Queries     # Queries for Basic Indexing Report
 
-├── indices/                # SQL files for creating indices.
+│   └── advanced_optimization_queries.sql #Queries for Advanced Optimization Report
 
-├── physical_plans/         # Modified physical plans for advanced optimization.
+├── physical_plans/         # Physical Plans Before and After Optimization.
 
 ├── results/                # Benchmarking results and performance analysis.
 
-│   ├── basic_indexing_results.pdf       # Tabular results for Phase 1.
+│   ├── basic_indexing_results.pdf       # Report for Phase 1
 
-│   └── advanced_optimization_results.pdf # Tabular results for Phase 2.
+│   └── advanced_optimization_results.pdf # Report for Phase 2.
 
-├── README.md               # Project overview and instructions.
-
-└── requirements.txt        # List of dependencies (if applicable).
+└── README.md               # Project overview and instructions (this file).
 
 
 ## Key Steps
