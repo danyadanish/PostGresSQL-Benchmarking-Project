@@ -25,6 +25,7 @@ project/
 ├── loaddb.sql                  # SQL to Load our Sample Data
 
 ├── queries/                # SQL files for the queries analyzed.
+
 │   ├── Basic Indexing Queries     # Queries for Basic Indexing Report
 
 │   └── advanced_optimization_queries.sql #Queries for Advanced Optimization Report
